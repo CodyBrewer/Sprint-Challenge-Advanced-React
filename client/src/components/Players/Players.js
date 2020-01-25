@@ -20,7 +20,7 @@ export default class Players extends Component {
   }
 
   getPlayerData = () => {
-    fetch(`http://olocalhost:5000/api/players`)
+    fetch(`http://localhost:5000/api/players`)
       .then(res => res.json())
       .then(data => {
         this.setState({
