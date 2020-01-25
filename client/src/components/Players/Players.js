@@ -43,7 +43,7 @@ export default class Players extends Component {
   }
 }
 
-const PlayerChart = ({ playerData }) => {
+export const PlayerChart = ({ playerData }) => {
   return (
     <ResponsiveContainer width={"90%"} height={400}>
       <BarChart
@@ -59,12 +59,12 @@ const PlayerChart = ({ playerData }) => {
           tick={{ stroke: "#8884D8", strokeWidth: 0.5 }}
         >
           <Label position="bottom" fontSize={12}>
-            Players
+            <p data-testid="players">Players</p>
           </Label>
         </XAxis>
         <YAxis>
-          <Label position="bottom" fontSize={12}>
-            Searches
+          <Label data-testid="searches" position="bottom" fontSize={12}>
+            <p>Searches</p>
           </Label>
         </YAxis>
         <Tooltip />
