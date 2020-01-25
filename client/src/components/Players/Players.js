@@ -58,12 +58,12 @@ const PlayerChart = ({ playerData }) => {
           fontSize={14}
           tick={{ stroke: "#8884D8", strokeWidth: 0.5 }}
         >
-          <Label position="bottom" offset={-200} fontSize={12}>
+          <Label position="bottom" fontSize={12}>
             Players
           </Label>
         </XAxis>
         <YAxis>
-          <Label position="bottom" offset={-200} fontSize={12}>
+          <Label position="bottom" fontSize={12}>
             Searches
           </Label>
         </YAxis>
