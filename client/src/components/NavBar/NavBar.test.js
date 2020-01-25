@@ -11,4 +11,10 @@ describe("NavBar Component", () => {
     const { getByTestId } = render(<NavBar />);
     expect(getByTestId("dark-mode-toggle")).toBeInTheDocument();
   });
+  test(`Should have the header Women's Soccer players Searches from the world cup`, () => {
+    const { queryByText } = render(<NavBar />);
+    expect(
+      queryByText(/Women's Soccer players Searches from the world cup/i)
+    ).toBeInTheDocument();
+  });
 });
